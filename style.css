@@ -64,11 +64,44 @@ li span {
 section h2:nth-child(1) {
     font-weight: bold;
     font-size: 18px;
+    margin-left: 20px;
+}
+
+h3 {
+    margin-left: 20px;
+    font-size: 14px;
 }
 
 .sous_titre {
     font-size: 16px;
 }
+
+/* ======== Filtres ======== */
+.filtres ul{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px !important;
+    
+}
+
+.filtres li{
+    border: 1px solid black;
+    border-radius: 40px;
+    list-style: none;
+    padding: 10px;
+    /* margin: auto; */
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.filtres li:first-child{
+    border: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
 
 /* ======== Section hebergement ======== */
 .sectiondeux {
@@ -163,7 +196,7 @@ aside {
 .photo_populaires img{
     border-radius: 20px 0px 0px 20px ;
     width: 100px;
-    height: 100px;
+    height: 127px;
 }
 
 .photo_populaires .price {
@@ -171,5 +204,9 @@ aside {
 }
 
 .lesPlusPopulaires .stars {
-    padding-top: 40px;
+    padding-top: 45px;
+}
+
+.photo_populaires figcaption {
+    margin-top: 10px;;
 }
