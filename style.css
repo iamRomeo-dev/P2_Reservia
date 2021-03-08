@@ -7,10 +7,17 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* ======== Header ======== */
 header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 /* ======== Logo ======== */
@@ -51,4 +58,14 @@ nav a:hover {
 li span {
     font-weight: bold;
     color: #0065FC;
+}
+
+/* ======== Navigation ======== */
+section h2:nth-child(1) {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sous_titre {
+    font-size: 16px;
 }
