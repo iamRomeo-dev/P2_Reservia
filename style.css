@@ -11,17 +11,9 @@ body {
     width: 90%;
     margin: auto;
 }
-.logo img {
-    height: 50px;
-} 
 
-.login {
-    display:flex;
-    align-items: center;
-    padding: 20px;
-}
-
-.flex_between {
+/* ======== Header ======== */
+.header {
     display: flex;
     align-items: center;
 }
@@ -29,23 +21,40 @@ body {
 .logo {
     width: 70vw;
 }
+.logo img {
+    height: 50px;
+    padding: 20px;
+} 
 
-/* ======== Navigation ======== */
-.navMenu{
+.navMenu {
     display: flex;
-    padding-left: 0px;
-    /* list-style: none; */
 }
 
-.navMenu li {
+.navMenu a {
      padding: 20px; 
      font-size: 16px;
 }
 
-.navMenu a {
+a {
     text-decoration: none;
-} 
+    border-top: solid 2px transparent;
+    transition: 0.3s;
+    color: black;
+}
 
+a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+.login {
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    color: #0065FC;
+    font-weight: bold;
+}
+/* ======== EO Header ======== */
 /* ======== Sous-titres ======== */
 /* section h2:nth-child(1) {
     font-weight: bold;
