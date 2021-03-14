@@ -3,6 +3,7 @@ body {
     margin: auto;
 }
 
+/* ======== Header ======== */
 .header {
     display: flex;
     justify-content: space-between;
@@ -13,9 +14,14 @@ body {
 .logo {
     width: 50vw;
 }
+.logo img {
+    height: 50px;
+    padding: 20px 20px 10px 20px;
+} 
 
 .login {
     order: 1;
+    padding: 20px 20px 10px 20px;
 }
 
 .navMenu {
@@ -48,3 +54,17 @@ a:hover {
 .login:hover {
     border-top: 2px solid #0065FC;
 }
+/* ======== EO Header ======== */
+/* ======== Form Section ======== */
+.search_icon {
+    display: flex;
+    padding: 0.9rem;
+    border-radius: 12px 12px 12px 12px;
+    background-color: #0065FC;
+    color: white;
+}
+
+.Seach_btn {
+    display: none;
+}
+/* ======== EO Form Section ======== */
