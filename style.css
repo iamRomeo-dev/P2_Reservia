@@ -8,62 +8,46 @@
 }
 
 body {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    padding: 0 3rem;
+    width: 90%;
+    margin: auto;
 }
-
-/* ======== Header ======== */
-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-/* ======== Logo ======== */
-
-.logo, nav {  
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 .logo img {
     height: 50px;
-    width: auto;
+} 
+
+.login {
+    display:flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.flex_between {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70vw;
 }
 
 /* ======== Navigation ======== */
-nav ul{
+.navMenu{
     display: flex;
-    list-style: none;
+    padding-left: 0px;
+    /* list-style: none; */
 }
 
-nav li {
-    padding: 10px;
-    font-size: 16px;
-
+.navMenu li {
+     padding: 20px; 
+     font-size: 16px;
 }
 
-nav a {
+.navMenu a {
     text-decoration: none;
-    color: grey;
-}
-
-nav a:hover {
-    border-top: 1px solid #0065FC;
-    padding-top: 20px;
-    color: #0065FC;
-}
-
-li span {
-    font-weight: bold;
-    color: #0065FC;
-}
+} 
 
 /* ======== Sous-titres ======== */
-section h2:nth-child(1) {
+/* section h2:nth-child(1) {
     font-weight: bold;
     font-size: 18px;
     margin-left: 20px;
@@ -76,10 +60,10 @@ h3 {
 
 .sous_titre {
     font-size: 16px;
-}
+} */
 
 /* ======== Filtres ======== */
-.filtres ul{
+/* .filtres ul{
     display: flex;
     justify-content: flex-start;
     padding-left: 0px !important;
@@ -91,7 +75,7 @@ h3 {
     border-radius: 40px;
     list-style: none;
     padding: 10px;
-    /* margin: auto; */
+    /* margin: auto; 
     font-weight: bold;
     font-size: 14px;
     margin-left: 15px;
@@ -101,12 +85,12 @@ h3 {
     border: none;
     margin-left: 0px;
     padding-left: 0px;
-}
+} */
 
 
 
 /* ======== Section hebergement ======== */
-.sectiondeux {
+/* .sectiondeux {
     display: flex;
     justify-content: space-between;
 }
@@ -157,21 +141,21 @@ figcaption span:nth-child(1) {
 
 .img_sous_titre {
     font-size: 12px;
-}
+} */
 
 /* .sous_titre_populaires {
 
 } */
-.price {
+/* .price {
     font-weight: bold;
 }
 
 .stars i{
     color: #0065FC;
-}
+} */
 
 /* ======== Section Les plus populaires ======== */
-aside {
+/* aside {
     flex: 1;
     margin-left: 40px;
 }
@@ -211,4 +195,4 @@ aside {
 
 .photo_populaires figcaption {
     margin-top: 10px;;
-}
+} */

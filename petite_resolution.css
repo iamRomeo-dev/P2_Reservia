@@ -1,0 +1,40 @@
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 50vw;
+}
+
+.login {
+    order: 1;
+}
+
+.navMenu {
+    order: 2;
+    width: 100vh;
+    justify-content: center;
+}
+.nav1 {
+    border-bottom: 5px solid  #F2F2F2;
+}
+
+.nav2 {
+    border-bottom: 5px solid  #F2F2F2;
+}
+
+.nav1:hover {
+    border-bottom: 5px solid  #0065FC;
+}
+
+.hovering {
+    border-bottom: 5px solid red;
+}
+
+.hovering:hover {
+    border-bottom: 5px solid blue;
+    color: blue;
+}
