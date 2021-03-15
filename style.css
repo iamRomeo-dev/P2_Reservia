@@ -122,6 +122,10 @@ section h2:nth-child(1) {
   margin-bottom: 20px;
   list-style-type: none;
 }
+
+.filtres i:hover {
+  color: black;
+}
 .filtres i {
   color: #0065fc;
   background-color: #deecff;
@@ -203,7 +207,7 @@ h3 {
   object-fit: cover;
 }
 
-figcaption {
+.hebergements figcaption {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -272,7 +276,7 @@ aside {
   object-fit: cover;
 }
 
-.test {
+.card_populaires figcaption {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -284,54 +288,67 @@ aside {
 
 /* ======== EO SectionDeux ======== */
 /* ======== EO Activités ======== */
-/* .container {
+.galleryPhoto {
+  display: flex;
+  column-gap: 9px;
+}
 
+.gallery {
+  margin: 20px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #9da2ab;
+}
+
+.gallery img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.desc {
+  min-height: 50px;
+  /* vertical-align:middle;
+  line-height: 50px; */
+}
+
+.img_column1 {
+  height: 300px;
+}
+
+.img_column2 {
+  height: 100px;
+}
+
+
+/* .img_column1 {
+  background-color: red;
+  height: 55%;
+}
+
+.img_column2 {
+  background-color: blue;
+  height: 30%;
 } */
 
-.image_gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 1.5rem;
-  grid-template-areas: 
-    'img_1 img_2 img_3 img_4'
-    'img_1 img_2 img_3 img_4'
-    'img_1 img_2 img_3 img_6'
-    'img_1 img_5 img_3 img_6';
-}
-
-.image_gallery a {
-  width: 100%;
-  height: 25rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
+/* .gallery_column_1 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
-.img_1 {
-  grid-area: img_1;
-  background-image: url("images/herbergement/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-}
-.img_2 {
-  grid-area: img_2;
-  background-image: url("images/herbergement/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-}
-.img_3 {
-  grid-area: img_3;
-  background-image: url("images/herbergement/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-}
-.img_4 {
-  grid-area: img_4;
-  background-image: url("images/herbergement/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-}
+.img_column1 {
+  flex-shrink: 7;
+} */
+/* 
+.img_column2 {
+  flex-grow: 1;
+} */
 /* ======== EO Activités ======== */
 /* ======== Footer ======== */
 footer {
   background-color: #f2f2f2;
-  height: 200px;
+  height: 500px;
 }
 
 
