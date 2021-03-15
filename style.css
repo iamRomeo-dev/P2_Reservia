@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/static/Raleway-Regular.ttf');
+  font-family: "Raleway";
+  src: url("fonts/static/Raleway-Regular.ttf");
 }
 /* 
 @font-face {
@@ -9,245 +9,246 @@
 } */
 
 * {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
 }
 
 body {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
 
 /* ======== Header ======== */
 .header {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
 }
 
 .logo {
-    width: 70vw;
+  width: 70vw;
 }
 .logo img {
-    height: 50px;
-    padding: 20px 20px 20px 0px;
-} 
+  height: 50px;
+  padding: 20px 20px 20px 0px;
+}
 
 .navMenu {
-    display: flex;
+  display: flex;
 }
 
 .navMenu a {
-     padding: 20px; 
-     /* font-size: 16px; */
+  padding: 20px;
+  /* font-size: 16px; */
 }
 
 a {
-    text-decoration: none;
-    border-top: solid 2px transparent;
-    transition: 0.3s;
-    color: black;
+  text-decoration: none;
+  border-top: solid 2px transparent;
+  transition: 0.3s;
+  color: black;
 }
 
 a:hover {
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
 }
 
 .login {
-    display:flex;
-    align-items: center;
-    padding: 20px 20px 20px 20px;
-    color: #0065FC;
-    /* font-family: 'Raleway-Bold' !important; */
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+  color: #0065fc;
+  /* font-family: 'Raleway-Bold' !important; */
 }
 /* ======== EO Header ======== */
 /* ======== Form Section ======== */
 section h2:nth-child(1) {
-    font-weight: bold;
-    font-size: 18px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .sous_titre {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .search_form {
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .map_icon {
-    padding: 0.9rem;
-    border-radius: 12px 0px 0px 12px;
-    background-color: #F2F2F2;
+  padding: 0.9rem;
+  border-radius: 12px 0px 0px 12px;
+  background-color: #f2f2f2;
 }
 
 .Seach_btn {
-    border: 0px transparent;
-    border-radius: 0px 12px 12px 0px;
-    background-color: #0065FC;
-    color: white;
-    padding: 0.5rem;
+  border: 0px transparent;
+  border-radius: 0px 12px 12px 0px;
+  background-color: #0065fc;
+  color: white;
+  padding: 0.5rem;
 }
 .search_icon {
-    display: none;
+  display: none;
 }
 
 .search_input {
-    padding: 0.5rem;
-    border: 1px solid #F2F2F2;
-    margin-right: -6px;
-    margin-left: -6px;
+  padding: 0.5rem;
+  border: 1px solid #f2f2f2;
+  margin-right: -6px;
+  margin-left: -6px;
 }
 /* ======== EO Form Section ======== */
 /* ======== Filtres ======== */
 .filtres {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-left: 0px;
-    
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 0px;
+  margin: 0px;
 }
 
-/* margin-left: 25px;
-margin-top: 30px;
-margin-bottom: 30px;
-max-width: 1000px; */
-
- .filtres li{
-    border: 1px solid #F2F2F2;
-    border-radius: 50px;
-    list-style: none;
-    padding: 10px 10px 10px 50px;
-    font-weight: bold;
-    font-size: 14px; 
-    margin-left: -37px;
+.filtres li {
+  border: 1px solid #f2f2f2;
+  border-radius: 50px;
+  padding: 0px 10px 0px 0px;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 .filtres i {
-    color: #0065FC;
-    background-color: #deecff;
-    border-radius: 50%;
-    list-style: none;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 14px;
-    margin-left: 20px;
+  color: #0065fc;
+  background-color: #deecff;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
 
-} 
+.filtres li:first-child {
+  border: none;
+  margin-left: 0px;
+}
 
-.filtres li:first-child{
-    border: none;
-    margin-left: 0px;
-    padding-left: 0px;
-} 
+.flex {
+  display: flex;
+  align-items: center;
+}
 
-
+.flex i {
+  border: solid #f2f2f2 2px;
+  border-radius: 50%;
+  padding: 5px 8px 5px 8px;
+  margin-right: 10px;
+  color: #0065fc;
+  font-size: 8px;
+}
 
 /* ======== Section hebergement ======== */
 .sectiondeux {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-article, aside {
-    background-color: #d8dee8;
-    border-radius: 20px;
-    padding: 10px;
+article,
+aside {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 article {
-    flex: 2;
+  flex: 2;
 }
 
 .hebergements {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.photo_hebergement  {
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 3px 3px 10px #9da2ab;
-    padding: 3px;
-    padding-bottom: 80px;
-    width: 200px;
-    height: 100px;
-    margin: 10px;
+.photo_hebergement {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #9da2ab;
+  padding: 3px;
+  padding-bottom: 80px;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
 }
 
-.photo_hebergement img{
-    border-radius: 20px 20px 0px 0px ;
-    width: 200px;
-    height: 100px;
+.photo_hebergement img {
+  border-radius: 20px 20px 0px 0px;
+  width: 200px;
+  height: 100px;
 }
 
 figcaption {
-    margin-left: 10px;
-    line-height: 1.3em;
-    overflow-wrap: break-word;
+  margin-left: 10px;
+  line-height: 1.3em;
+  overflow-wrap: break-word;
 }
 
 figcaption span:nth-child(1) {
-    font-weight: bold;
-    font-size: 14px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .img_sous_titre {
-    font-size: 12px;
+  font-size: 12px;
 }
-
 
 .price {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.stars i{
-    color: #0065FC;
+.stars i {
+  color: #0065fc;
 }
 
 /* ======== Section Les plus populaires ======== */
 aside {
-    flex: 1;
-    margin-left: 40px;
+  flex: 1;
+  margin-left: 40px;
 }
 
 .lesPlusPopulaires {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .photo_populaires {
-    display: flex;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 3px 3px 10px #9da2ab;
-    padding: 3px;
-    padding-bottom: 80px;
-    width: 300px;
-    height: 50px;
-    margin: 10px;
-    padding-top: auto;
-    padding-bottom: auto;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #9da2ab;
+  padding: 3px;
+  padding-bottom: 80px;
+  width: 300px;
+  height: 50px;
+  margin: 10px;
+  padding-top: auto;
+  padding-bottom: auto;
 }
 
-.photo_populaires img{
-    border-radius: 20px 0px 0px 20px ;
-    width: 100px;
-    height: 127px;
+.photo_populaires img {
+  border-radius: 20px 0px 0px 20px;
+  width: 100px;
+  height: 127px;
 }
 
 .photo_populaires .price {
-    align-content:flex-end;
+  align-content: flex-end;
 }
 
 .lesPlusPopulaires .stars {
-    padding-top: 45px;
+  padding-top: 45px;
 }
 
 .photo_populaires figcaption {
-    margin-top: 10px;;
+  margin-top: 10px;
 }
