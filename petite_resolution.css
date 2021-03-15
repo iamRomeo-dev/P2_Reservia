@@ -3,6 +3,12 @@ body {
   margin: auto;
 }
 
+header, section {
+  width: 100%;
+  margin: auto;
+}
+
+
 /* ======== Header ======== */
 .header {
   display: flex;
@@ -57,6 +63,12 @@ a:hover {
   border-top: 2px solid #0065fc;
 }
 /* ======== EO Header ======== */
+/* ======== SectionUn ======== */
+.sectionUn {
+  width: 90%;
+  margin: auto;
+}
+
 /* ======== Form Section ======== */
 .search_icon {
   display: flex;
@@ -70,3 +82,20 @@ a:hover {
   display: none;
 }
 /* ======== EO Form Section ======== */
+/* ======== EO SectionUn ======== */
+article {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+article {
+  order: 2;
+}
+
+aside {
+  order: 1;
+  margin-left: 0px;
+  border-radius: 0px;
+
+}

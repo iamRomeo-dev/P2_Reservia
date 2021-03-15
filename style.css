@@ -13,7 +13,7 @@
   font-size: 16px;
 }
 
-body {
+header, section {
   width: 90%;
   margin: auto;
 }
@@ -61,7 +61,9 @@ a:hover {
   color: #0065fc;
   /* font-family: 'Raleway-Bold' !important; */
 }
+
 /* ======== EO Header ======== */
+/* ======== SectionUn ======== */
 /* ======== Form Section ======== */
 section h2:nth-child(1) {
   font-weight: bold;
@@ -147,10 +149,12 @@ section h2:nth-child(1) {
   font-size: 8px;
 }
 
-/* ======== Section hebergement ======== */
+/* ======== EO SectionUn ======== */
+/* ======== SectionDeux ======== */
 .sectiondeux {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 article,
@@ -160,6 +164,7 @@ aside {
   padding: 10px;
 }
 
+/* ======== Section hebergement ======== */
 article {
   flex: 2;
 }
@@ -170,26 +175,36 @@ article {
   flex-wrap: wrap;
 }
 
-.photo_hebergement {
+.card_hebergement {
   background-color: white;
   border-radius: 20px;
   box-shadow: 3px 3px 10px #9da2ab;
   padding: 3px;
-  padding-bottom: 80px;
-  width: 200px;
-  height: 100px;
-  margin: 10px;
+  width: 28%;
+  min-width: 300px;
+  height: 230px;
+  margin: 1rem;
+}
+@media screen and (max-width: 345px) {
+  .card_hebergement {
+  min-width: 250px;
+  }
 }
 
-.photo_hebergement img {
+.card_hebergement img {
   border-radius: 20px 20px 0px 0px;
-  width: 200px;
-  height: 100px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
 figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 10px;
-  line-height: 1.3em;
+  height: 80px;
+  line-height: 1.4em;
   overflow-wrap: break-word;
 }
 
@@ -251,4 +266,11 @@ aside {
 
 .photo_populaires figcaption {
   margin-top: 10px;
+}
+
+
+/* ======== Footer ======== */
+footer {
+  background-color: #f2f2f2;
+  height: 200px;
 }
