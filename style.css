@@ -173,6 +173,7 @@ section h2:nth-child(1) {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 article,
@@ -188,7 +189,7 @@ article {
 }
 
 .titleHebergement,
-h3 {
+.sectiondeux h3 {
   margin-left: 20px;
 }
 
@@ -235,7 +236,7 @@ h3 {
 .hebergements a figcaption {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   margin-left: 10px;
   height: 80px;
   width: 100%;
@@ -315,51 +316,142 @@ aside {
 
 /* ======== EO SectionDeux ======== */
 /* ======== EO Activités ======== */
-.galleryPhoto {
+.sectiontrois {
+  margin-top: 50px;
+}
+
+.sectiontrois h2 {
+  margin-bottom: 30px;
+}
+.gallery_activites {
   display: flex;
-  column-gap: 9px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.gallery {
-  margin: 20px;
-  width: auto;
-  border-radius: 10px;
+.col_big,
+.col_2,
+.col_4 {
+  width: 22%;
+  margin-bottom: 20px;
+}
+
+.sectiontrois a {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
   box-shadow: 3px 3px 10px #9da2ab;
+  text-decoration: none;
 }
 
-.gallery img {
+.sectiontrois img {
   width: 100%;
-  height: 90%;
+  height: 100%;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  border-radius: 10px 10px 0px 0px;
 }
 
-.desc {
+.titre_du_bas {
+  font-family: "Raleway-Bold";
+  color: #000;
   min-height: 50px;
+  padding: 2px 16px;
+  overflow-wrap: break-word;
+  display: flex;
+  align-items: center;
 }
 
-.img_column1 {
-  height: 300px;
+.col_2,
+.col_4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.img_column2 {
-  height: 100px;
+.col_2_img_1 {
+  height: 55%;
+}
+
+.col_2_img_2 {
+  height: 35%;
+}
+
+.col_4_img_1 {
+  height: 45%;
+}
+
+.col_4_img_2 {
+  height: 45%;
+}
+
+@media screen and (max-width: 1150px) {
+  .col_big,
+  .col_2,
+  .col_4 {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+  .gallery_activites {
+    justify-content: space-around;
+  }
+
+  .col_2_img_1 {
+    height: 45%;
+  }
+
+  .col_2_img_2 {
+    height: 45%;
+  }
+
+  .col_4_img_1 {
+    height: 45%;
+  }
+
+  .col_4_img_2 {
+    height: 45%;
+  }
+
+  .col_big:nth-of-type(2n){
+    order: 1;
+  }
 }
 /* ======== EO Activités ======== */
 /* ======== Footer ======== */
 footer {
   background-color: #f2f2f2;
   height: 500px;
+  margin-top: 50px;
 }
 
-/* @media screen and (max-width: 345px) {
-  .card_hebergement {
-    min-width: 250px;
+@media screen and (max-width: 800px) {
+  .gallery_activites a {
+    flex-direction: column;
+    height: 100%;
+  }
+  .sectiontrois .col_big {
+    width: 87%;
+    height: 230px;
+    margin-bottom: 32px;
+  }
+  .col_4,
+  .col_2,
+  .col_big {
+    width: 87%;
+    height: 250px;
+    margin-bottom: 200px;
+  }
+
+  .col_big:nth-of-type(2n) {
+    margin-top: 110px;
+  }
+  .col_2_img_1,
+  .col_2_img_2,
+  .col_4_img_1,
+  .col_4_img_2 {
+    height: 230px;
+    margin-bottom: 30px;
+  }
+  .col_big:nth-of-type(2n){
+    order: 0;
   }
 }
-@media screen and (max-width: 800px) {
-  aside {
-    flex: 1;
-    margin-left: 0px;
-  }
-} */
