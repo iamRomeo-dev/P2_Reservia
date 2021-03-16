@@ -13,7 +13,8 @@
   font-size: 16px;
 }
 
-header, section {
+header,
+section {
   width: 90%;
   margin: auto;
 }
@@ -39,8 +40,8 @@ header, section {
 
 .navMenu a {
   padding: 20px;
-  /* font-size: 16px; */
 }
+
 .header a {
   text-decoration: none;
   border-top: solid 2px transparent;
@@ -48,7 +49,9 @@ header, section {
   color: black;
 }
 
-.header a:hover {
+.nav1:hover,
+.nav2:hover,
+.login:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
 }
@@ -113,6 +116,13 @@ section h2:nth-child(1) {
   margin: 0px;
 }
 
+.filtre {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .filtres li {
   border: 1px solid #f2f2f2;
   border-radius: 50px;
@@ -134,9 +144,8 @@ section h2:nth-child(1) {
   margin-right: 10px;
 }
 
-.filtres li:first-child {
-  border: none;
-  margin-left: 0px;
+.title_filtres {
+  border: none !important;
 }
 
 .a {
@@ -234,7 +243,7 @@ figcaption span:nth-child(1) {
 
 .stars i {
   color: #0065fc;
-}
+} 
 
 /* ======== Section Les plus populaires ======== */
 aside {
@@ -250,7 +259,7 @@ aside {
   padding-right: 20px;
 }
 
-.lesPlusPopulaires a{
+.lesPlusPopulaires a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,8 +318,6 @@ aside {
 
 .desc {
   min-height: 50px;
-  /* vertical-align:middle;
-  line-height: 50px; */
 }
 
 .img_column1 {
@@ -320,30 +327,6 @@ aside {
 .img_column2 {
   height: 100px;
 }
-
-
-/* .img_column1 {
-  background-color: red;
-  height: 55%;
-}
-
-.img_column2 {
-  background-color: blue;
-  height: 30%;
-} */
-
-/* .gallery_column_1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.img_column1 {
-  flex-shrink: 7;
-} */
-/* 
-.img_column2 {
-  flex-grow: 1;
-} */
 /* ======== EO Activités ======== */
 /* ======== Footer ======== */
 footer {
@@ -351,10 +334,9 @@ footer {
   height: 500px;
 }
 
-
-@media screen and (max-width: 345px) {
+/* @media screen and (max-width: 345px) {
   .card_hebergement {
-  min-width: 250px;
+    min-width: 250px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -362,4 +344,4 @@ footer {
     flex: 1;
     margin-left: 0px;
   }
-}
+} */
