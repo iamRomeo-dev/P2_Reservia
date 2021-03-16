@@ -198,7 +198,12 @@ h3 {
   flex-wrap: wrap;
 }
 
-.card_hebergement {
+.hebergements a {
+  /* width: 33%;
+  min-width: 300px; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   background-color: white;
   border-radius: 20px;
   box-shadow: 3px 3px 10px #9da2ab;
@@ -208,22 +213,35 @@ h3 {
   height: 230px;
   margin: 1rem;
 }
+/* 
+.card_hebergement {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #9da2ab;
+  padding: 3px;
+  width: 28%;
+  min-width: 300px;
+  height: 230px;
+  margin: 1rem;
+} */
 
-.card_hebergement img {
+.a img {
   border-radius: 20px 20px 0px 0px;
   width: 100%;
   height: 150px;
   object-fit: cover;
 }
 
-.hebergements figcaption {
+.hebergements a figcaption {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
   margin-left: 10px;
   height: 80px;
+  width: 100%;
   line-height: 1.4em;
   overflow-wrap: break-word;
+  padding: 5px;
 }
 
 figcaption span:nth-child(1) {
@@ -243,7 +261,7 @@ figcaption span:nth-child(1) {
 
 .stars i {
   color: #0065fc;
-} 
+}
 
 /* ======== Section Les plus populaires ======== */
 aside {
