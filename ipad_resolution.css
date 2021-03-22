@@ -1,3 +1,22 @@
+.container_filtres {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0px;
+}
+
+.filtres {
+  padding-left: 0px;
+}
+
+.title_filtres {
+  margin-bottom: 15px;
+}
+
+.filtres li {
+  margin-bottom: 15px;
+}
+
+/* ======== SectionDeux ======== */
 .sectiondeux {
   flex-direction: column;
   align-items: center;
@@ -9,12 +28,12 @@ article {
 }
 /* ======== Section Les plus populaires ======== */
 aside {
-  flex: 1;
   margin-left: 0px;
   margin-bottom: 40px;
+  width: 100%;
 }
 
-.lesPlusPopulaires {
+.cards_lesPlusPopulaires {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -22,10 +41,10 @@ aside {
   flex-wrap: wrap;
 }
 
-.lesPlusPopulaires a {
-  width: 200px;
-  margin: 10px;
-}
+/* .lesPlusPopulaires a {
+    width: 200px;
+    margin: 10px;
+  } */
 
 .card_populaires {
   display: flex;
@@ -34,27 +53,20 @@ aside {
   border-radius: 20px;
   box-shadow: 3px 3px 10px #9da2ab;
   padding: 3px;
-  width: 15%;
-  min-width: 200px;
-  height: 100px;
+  max-width: 300px;
+  height: 150px;
   margin: 1rem;
 }
 
 .card_populaires img {
   border-radius: 20px 0px 0px 20px;
-  width: 75px;
+  width: 100px;
   height: 100%;
   object-fit: cover;
 }
 
-.card_populaires figcaption {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 10px;
-  line-height: 1.4em;
-  overflow-wrap: break-word;
-  height: 100px;
+.card_populaires .figcaption {
+  height: 130px;
 }
 
 .card_populaires .img_titre {
@@ -67,4 +79,37 @@ aside {
 
 .card_populaires .stars i {
   font-size: 12px;
+}
+
+/* ======== Activités SectionTrois======== */
+@media screen and (max-width: 1150px) {
+  .col_big,
+  .col_2,
+  .col_4 {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+  .gallery_activites {
+    justify-content: space-around;
+  }
+
+  .col_2_img_1 {
+    height: 45%;
+  }
+
+  .col_2_img_2 {
+    height: 45%;
+  }
+
+  .col_big:nth-of-type(2n) {
+    order: 1;
+  }
+  .col_2_img_2 img {
+    height: 76%;
+  }
+}
+
+/* ======== Footer ======== */
+.container_footer {
+  width: 90%;
 }

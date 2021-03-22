@@ -31,7 +31,7 @@ section {
 }
 .logo img {
   height: 50px;
-  padding: 20px 20px 20px 0px;
+  /* padding: 20px 20px 20px 0px; */
 }
 
 .navMenu {
@@ -56,20 +56,22 @@ section {
   border-top: 2px solid #0065fc;
 }
 
-.login {
-  display: flex;
-  align-items: center;
-  padding: 20px 20px 20px 20px;
+.login span {
   color: #0065fc;
-  /* font-family: 'Raleway-Bold' !important; */
+  font-weight: bold;
+}
+
+.login {
+  padding: 20px;
 }
 
 /* ======== EO Header ======== */
 /* ======== SectionUn ======== */
 /* ======== Form Section ======== */
-section h2:nth-child(1) {
+section h1 {
   font-weight: bold;
   font-size: 18px;
+  margin-top: 20px;
 }
 
 .sous_titre {
@@ -107,12 +109,15 @@ section h2:nth-child(1) {
 }
 /* ======== EO Form Section ======== */
 /* ======== Filtres ======== */
+.container_filtres {
+  display: flex;
+  align-items: center;
+}
+
 .filtres {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 0px;
   margin: 0px;
 }
 
@@ -129,7 +134,6 @@ section h2:nth-child(1) {
   padding: 0px 10px 0px 0px;
   font-weight: bold;
   margin-right: 20px;
-  margin-bottom: 20px;
   list-style-type: none;
 }
 
@@ -144,21 +148,19 @@ section h2:nth-child(1) {
   margin-right: 10px;
 }
 
-.title_filtres {
-  border: none !important;
-}
-
 .a {
   text-decoration: none;
   color: black;
 }
 
-.flex {
+.container_info {
   display: flex;
   align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.flex i {
+.container_info i {
   border: solid #f2f2f2 2px;
   border-radius: 50%;
   padding: 5px 8px 5px 8px;
@@ -168,6 +170,7 @@ section h2:nth-child(1) {
 }
 
 /* ======== EO SectionUn ======== */
+
 /* ======== SectionDeux ======== */
 .sectiondeux {
   display: flex;
@@ -180,7 +183,6 @@ article,
 aside {
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding: 20px 10px 10px 10px;
 }
 
 /* ======== Section hebergement ======== */
@@ -188,43 +190,36 @@ article {
   flex: 2;
 }
 
-.titleHebergement,
-.sectiondeux h3 {
-  margin-left: 20px;
+.titleHebergement {
+  font-size: 18px;
+  margin-left: 45px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.afficherPlus {
+  margin-left: 35px;
+  font-weight: bold;
 }
 
-.hebergements {
+.cards_hebergements {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.hebergements a {
-  /* width: 33%;
-  min-width: 300px; */
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.cards_hebergements a {
   background-color: white;
   border-radius: 20px;
   box-shadow: 3px 3px 10px #9da2ab;
   padding: 3px;
-  width: 28%;
-  min-width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 230px;
   margin: 1rem;
 }
-/* 
-.card_hebergement {
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 3px 3px 10px #9da2ab;
-  padding: 3px;
-  width: 28%;
-  min-width: 300px;
-  height: 230px;
-  margin: 1rem;
-} */
+.cards_hebergements a:hover {
+  box-shadow: none;
+}
 
 .a img {
   border-radius: 20px 20px 0px 0px;
@@ -233,24 +228,19 @@ article {
   object-fit: cover;
 }
 
-.hebergements a figcaption {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 10px;
-  height: 80px;
-  width: 100%;
-  line-height: 1.4em;
-  overflow-wrap: break-word;
-  padding: 5px;
+.figcaption_card_herbergement {
+  line-height: 1.3em;
+  margin-left: 15px;
+  margin-top: 5px;
 }
 
-figcaption span:nth-child(1) {
+.figcaption_card_herbergement span:nth-child(1) {
   font-weight: bold;
 }
 
 .img_titre {
   font-size: 18px;
+  font-weight: bold;
 }
 .img_sous_titre {
   font-size: 14px;
@@ -266,7 +256,6 @@ figcaption span:nth-child(1) {
 
 /* ======== Section Les plus populaires ======== */
 aside {
-  flex: 1;
   margin-left: 40px;
 }
 
@@ -274,11 +263,14 @@ aside {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.lesPlusPopulaires a {
+.cards_lesPlusPopulaires a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -297,6 +289,10 @@ aside {
   margin: 1rem;
 }
 
+.card_populaires:hover {
+  box-shadow: none;
+}
+
 .card_populaires img {
   border-radius: 20px 0px 0px 20px;
   width: 150px;
@@ -304,18 +300,19 @@ aside {
   object-fit: cover;
 }
 
-.card_populaires figcaption {
+.card_populaires .figcaption {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 10px;
   line-height: 1.4em;
   overflow-wrap: break-word;
-  height: 153px;
+  height: 150px;
 }
 
 /* ======== EO SectionDeux ======== */
-/* ======== EO Activités ======== */
+
+/* ======== Activités SectionTrois ======== */
 .sectiontrois {
   margin-top: 50px;
 }
@@ -323,10 +320,16 @@ aside {
 .sectiontrois h2 {
   margin-bottom: 30px;
 }
+
 .gallery_activites {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.titleActivites {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .col_big,
@@ -334,6 +337,7 @@ aside {
 .col_4 {
   width: 22%;
   margin-bottom: 20px;
+  height: 500px;
 }
 
 .sectiontrois a {
@@ -344,6 +348,10 @@ aside {
   text-decoration: none;
 }
 
+.sectiontrois a:hover {
+  box-shadow: 3px 3px 10px #dde5f3;
+}
+
 .sectiontrois img {
   width: 100%;
   height: 100%;
@@ -351,10 +359,22 @@ aside {
   object-fit: cover;
 }
 
+.col_4_img_1 img, .col_2_img_1 img {
+  height: 80%;
+}
+
+.col_2_img_2 img {
+  height: 69%;
+}
+
+.col_4_img_1 img {
+  height: 76%;
+}
+
 .titre_du_bas {
   font-family: "Raleway-Bold";
   color: #000;
-  min-height: 50px;
+  min-height: 50px !important;
   padding: 2px 16px;
   overflow-wrap: break-word;
   display: flex;
@@ -384,74 +404,35 @@ aside {
   height: 45%;
 }
 
-@media screen and (max-width: 1150px) {
-  .col_big,
-  .col_2,
-  .col_4 {
-    width: 40%;
-    margin-bottom: 40px;
-  }
-  .gallery_activites {
-    justify-content: space-around;
-  }
-
-  .col_2_img_1 {
-    height: 45%;
-  }
-
-  .col_2_img_2 {
-    height: 45%;
-  }
-
-  .col_4_img_1 {
-    height: 45%;
-  }
-
-  .col_4_img_2 {
-    height: 45%;
-  }
-
-  .col_big:nth-of-type(2n){
-    order: 1;
-  }
-}
 /* ======== EO Activités ======== */
+
 /* ======== Footer ======== */
 footer {
   background-color: #f2f2f2;
-  height: 500px;
+  padding: 30px;
+  height: 400px;
   margin-top: 50px;
 }
 
-@media screen and (max-width: 800px) {
-  .gallery_activites a {
-    flex-direction: column;
-    height: 100%;
-  }
-  .sectiontrois .col_big {
-    width: 87%;
-    height: 230px;
-    margin-bottom: 32px;
-  }
-  .col_4,
-  .col_2,
-  .col_big {
-    width: 87%;
-    height: 250px;
-    margin-bottom: 200px;
-  }
+.container_footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 65%;
+  margin-left: 50px;
+  line-height: 2em;
+}
 
-  .col_big:nth-of-type(2n) {
-    margin-top: 110px;
-  }
-  .col_2_img_1,
-  .col_2_img_2,
-  .col_4_img_1,
-  .col_4_img_2 {
-    height: 230px;
-    margin-bottom: 30px;
-  }
-  .col_big:nth-of-type(2n){
-    order: 0;
-  }
+.footer .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 100%;
 }
