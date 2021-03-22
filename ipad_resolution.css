@@ -41,11 +41,6 @@ aside {
   flex-wrap: wrap;
 }
 
-/* .lesPlusPopulaires a {
-    width: 200px;
-    margin: 10px;
-  } */
-
 .card_populaires {
   display: flex;
   align-items: center;
@@ -89,6 +84,7 @@ aside {
     width: 40%;
     margin-bottom: 40px;
   }
+
   .gallery_activites {
     justify-content: space-around;
   }

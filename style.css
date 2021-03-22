@@ -2,11 +2,6 @@
   font-family: "Raleway";
   src: url("fonts/static/Raleway-Regular.ttf");
 }
-/* 
-@font-face {
-    font-family: 'Raleway-Bold';
-    src: url('fonts/static/Raleway-Bold.ttf');
-} */
 
 * {
   font-family: "Raleway", sans-serif;
@@ -29,9 +24,9 @@ section {
 .logo {
   width: 70vw;
 }
+
 .logo img {
   height: 50px;
-  /* padding: 20px 20px 20px 0px; */
 }
 
 .navMenu {
@@ -140,6 +135,7 @@ section h1 {
 .filtres i:hover {
   color: black;
 }
+
 .filtres i {
   color: #0065fc;
   background-color: #deecff;
@@ -170,7 +166,6 @@ section h1 {
 }
 
 /* ======== EO SectionUn ======== */
-
 /* ======== SectionDeux ======== */
 .sectiondeux {
   display: flex;
@@ -196,6 +191,7 @@ article {
   margin-top: 30px;
   font-weight: bold;
 }
+
 .afficherPlus {
   margin-left: 35px;
   font-weight: bold;
@@ -217,6 +213,7 @@ article {
   height: 230px;
   margin: 1rem;
 }
+
 .cards_hebergements a:hover {
   box-shadow: none;
 }
@@ -242,6 +239,7 @@ article {
   font-size: 18px;
   font-weight: bold;
 }
+
 .img_sous_titre {
   font-size: 14px;
 }
@@ -311,7 +309,6 @@ aside {
 }
 
 /* ======== EO SectionDeux ======== */
-
 /* ======== Activités SectionTrois ======== */
 .sectiontrois {
   margin-top: 50px;
@@ -359,7 +356,8 @@ aside {
   object-fit: cover;
 }
 
-.col_4_img_1 img, .col_2_img_1 img {
+.col_4_img_1 img,
+.col_2_img_1 img {
   height: 80%;
 }
 
@@ -374,7 +372,7 @@ aside {
 .titre_du_bas {
   font-family: "Raleway-Bold";
   color: #000;
-  min-height: 50px !important;
+  min-height: 50px;
   padding: 2px 16px;
   overflow-wrap: break-word;
   display: flex;
@@ -405,7 +403,6 @@ aside {
 }
 
 /* ======== EO Activités ======== */
-
 /* ======== Footer ======== */
 footer {
   background-color: #f2f2f2;
