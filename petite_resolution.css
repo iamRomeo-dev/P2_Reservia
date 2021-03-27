@@ -85,6 +85,7 @@ a {
 }
 /* ======== EO Form Section ======== */
 /* ======== Section Les plus populaires ======== */
+
 article {
   background-color: #fff;
 }
@@ -95,7 +96,7 @@ aside {
 }
 
 .titleLesPlusPopulaires {
-  padding-left: 35px;
+  padding-left: 40px;
   padding-right: 35px;
 }
 
@@ -105,7 +106,11 @@ aside {
 
 .card_populaires {
   min-width: 300px;
-  height: 175px;
+  height: 140px;
+}
+
+.a .card_populaires img {
+  height: 140px;
 }
 
 .card_populaires img {
@@ -129,12 +134,24 @@ aside {
 }
 
 .titleHebergement {
-  margin-left: 35px;
+  margin-left: 40px;
   margin-top: 0;
 }
 
 .cards_hebergements a:hover {
   box-shadow: 0px 0px 10px #9da2ab;
+}
+
+.cards_hebergements a {
+  height: 200px;
+}
+
+.a img {
+  height: 120px;
+}
+
+.afficherPlus {
+  margin-left: 40px;
 }
 
 /* ======== Activités SectionTrois======== */
@@ -143,7 +160,7 @@ aside {
 }
 
 .sectiontrois h2 {
-  margin-left: 35px;
+  margin-left: 40px;
 }
 
 .gallery_activites a {
@@ -153,8 +170,14 @@ aside {
 
 .sectiontrois .col_big {
   max-width: 300px;
-  height: 230px;
-  margin-bottom: 32px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.sectiontrois .col_2_img_1,
+.sectiontrois .col_2_img_2,
+.sectiontrois .col_4_img_1 {
+  height: 200px;
 }
 
 .sectiontrois img {
@@ -171,7 +194,7 @@ aside {
 }
 
 .col_big:nth-of-type(2n) {
-  margin-top: 110px;
+  margin-top: 10px;
 }
 
 .col_2_img_1,
@@ -188,7 +211,7 @@ aside {
 
 /* ======== Footer ======== */
 footer {
-  margin-top: 110px;
+  margin-top: 30px;
 }
 
 .container_footer {
