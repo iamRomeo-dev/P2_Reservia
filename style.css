@@ -1,6 +1,11 @@
 @font-face {
   font-family: "Raleway";
-  src: url("fonts/static/Raleway-Regular.ttf");
+  src: url("assets/fonts/static/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway_Bold";
+  src: url("assets/fonts/static/Raleway-Bold.ttf");
 }
 
 * {
@@ -8,10 +13,13 @@
   font-size: 16px;
 }
 
-header,
-section {
+.header,
+.sectiondeux,
+.sectionUn,
+.sectiontrois {
   width: 90%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ======== Header ======== */
@@ -53,7 +61,7 @@ section {
 
 .login span {
   color: #0065fc;
-  font-weight: bold;
+  font-family: "Raleway_Bold", sans-serif;
 }
 
 .login {
@@ -101,6 +109,7 @@ section h1 {
   border: 1px solid #f2f2f2;
   margin-right: -6px;
   margin-left: -6px;
+  font-family: "Raleway_Bold", sans-serif;
 }
 /* ======== EO Form Section ======== */
 /* ======== Filtres ======== */
@@ -114,6 +123,7 @@ section h1 {
   flex-wrap: wrap;
   align-items: center;
   margin: 0px;
+  padding-left: 20px;
 }
 
 .filtre {
@@ -123,8 +133,12 @@ section h1 {
   align-items: center;
 }
 
+.title_filtres {
+  font-weight: bold;
+}
+
 .filtres li {
-  border: 1px solid #f2f2f2;
+  border: 2px solid #f2f2f2;
   border-radius: 50px;
   padding: 0px 10px 0px 0px;
   font-weight: bold;
@@ -183,17 +197,19 @@ aside {
 /* ======== Section hebergement ======== */
 article {
   flex: 2;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .titleHebergement {
   font-size: 18px;
-  margin-left: 45px;
-  margin-top: 30px;
+  margin-left: 30px;
+  margin-top: 44.94px; /*Pour egaliser avec le titre lespluspopulaires car le h2 est dans une div qui a un margin-top de 14,97px*/
   font-weight: bold;
 }
 
 .afficherPlus {
-  margin-left: 35px;
+  margin-left: 30px;
   font-weight: bold;
 }
 
@@ -254,7 +270,8 @@ article {
 
 /* ======== Section Les plus populaires ======== */
 aside {
-  margin-left: 40px;
+  margin-left: 60px;
+  padding-bottom: 20px;
 }
 
 .titleLesPlusPopulaires {
@@ -264,8 +281,11 @@ aside {
   padding-left: 45px;
   padding-right: 45px;
   margin-top: 30px;
-  font-weight: bold;
+}
+
+.titleLesPlusPopulaires h2 {
   font-size: 18px;
+  font-weight: bold;
 }
 
 .cards_lesPlusPopulaires a {
@@ -407,7 +427,7 @@ aside {
 footer {
   background-color: #f2f2f2;
   padding: 30px;
-  height: 400px;
+  /* height: 150px; */
   margin-top: 50px;
 }
 
@@ -415,7 +435,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 65%;
+  width: 70%;
   margin-left: 50px;
   line-height: 2em;
 }

@@ -1,12 +1,12 @@
 body {
-  width: 100%;
-  margin: auto;
+  margin: 0;
 }
 
-header,
-section {
+.header,
+.sectiondeux,
+.sectionUn,
+.sectiontrois {
   width: 100%;
-  margin: auto;
 }
 
 /* ======== Header ======== */
@@ -85,6 +85,20 @@ a {
 }
 /* ======== EO Form Section ======== */
 /* ======== Section Les plus populaires ======== */
+article {
+  background-color: #fff;
+}
+
+aside {
+  background-color: #f2f2f2;
+  border-radius: 0;
+}
+
+.titleLesPlusPopulaires {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
 .lesPlusPopulaires a {
   width: 300px;
 }
@@ -114,7 +128,24 @@ a {
   height: 145px;
 }
 
+.titleHebergement {
+  margin-left: 35px;
+  margin-top: 0;
+}
+
+.cards_hebergements a:hover {
+  box-shadow: 0px 0px 10px #9da2ab;
+}
+
 /* ======== Activités SectionTrois======== */
+.sectiontrois {
+  margin-top: 30px;
+}
+
+.sectiontrois h2 {
+  margin-left: 35px;
+}
+
 .gallery_activites a {
   flex-direction: column;
   height: 100%;
