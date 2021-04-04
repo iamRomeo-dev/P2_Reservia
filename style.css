@@ -443,7 +443,7 @@ footer {
   line-height: 2em;
 }
 
-.footer .column {
+footer .column {
   display: flex;
   flex-direction: column;
 }
